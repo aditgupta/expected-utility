@@ -18,7 +18,7 @@ This project provides a Python implementation for determining the **optimal port
    - **Mean Returns**: The expected annual return for each asset class.
    - **Volatilities**: The annual standard deviation (volatility) for each asset class.
    - **Correlation Matrix**: Defines how the returns of different asset classes are correlated.
-   - **CRRA Coefficient (\(\gamma\))**: The degree of risk aversion. A value of \(\gamma = 0.9\) indicates mild risk tolerance.
+   - **CRRA Coefficient, $\gamma$**: The degree of risk aversion. A value of $\gamma$ = 0.9 indicates mild risk tolerance.
 
 3. **Simulation**:
    - The code generates **10,000 random portfolio allocations** using the Dirichlet distribution (ensuring that all weights sum to 1).
@@ -69,7 +69,7 @@ This project provides a Python implementation for determining the **optimal port
         \ln(W), & \text{if } \gamma = 1
         \end{cases}
     $$
-    
+
    - The expected utility is computed by averaging the utility across all simulations.
 
 4. **Optimal Allocation**:
@@ -107,9 +107,9 @@ You can modify the following parameters to fit your specific use case:
 
 3. **Risk Aversion Coefficient** (`gamma`):  
    Adjust the CRRA coefficient to reflect different levels of risk aversion:
-   - \( \gamma < 1 \): Risk-tolerant or risk-loving investor.
-   - \( \gamma = 1 \): Logarithmic utility, representing a risk-neutral investor.
-   - \( \gamma > 1 \): Risk-averse investor.
+   - $\gamma$ < 1 : Risk-tolerant or risk-loving investor.
+   - $\gamma$ = 1 : Logarithmic utility, representing a risk-neutral investor.
+   - $\gamma$ > 1 : Risk-averse investor.
 
 ---
 
