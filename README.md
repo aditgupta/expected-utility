@@ -62,8 +62,7 @@ This project provides a Python implementation for determining the **optimal port
 3. **Utility Calculation**:
    - The **CRRA utility function** is used to compute the utility of simulated terminal wealth:
 
-     $$
-     U(W) = 
+     $$U(W) = 
         \begin{cases} 
         \frac{W^{1 - \gamma}}{1 - \gamma}, & \text{if } \gamma \neq 1 \\
         \ln(W), & \text{if } \gamma = 1
